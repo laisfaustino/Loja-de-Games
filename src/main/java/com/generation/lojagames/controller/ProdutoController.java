@@ -103,4 +103,15 @@ public class ProdutoController {
 	public void setTemaRepository(CategoriaRepository categoriaRepository) {
 		this.categoriaRepository = categoriaRepository;
 	}
+	@GetMapping("/preco_maior/{preco}")
+	public ResponseEntity<List<Produto>> getPrecoMaiorQue(@PathVariable BigDecimal preco){ 
+		return ResponseEntity.ok(produtoRepository.findAllByPrecoContainingIgnoreCase(preco));
+	}
+	
+	// Consulta pelo preço menor do que o preço digitado em ordem decrescente
+	
+	@GetMapping("/preco_menor/{preco}")
+	public ResponseEntity<List<Produto>> getPrecoMenorQue(@PathVariable BigDecimal preco){ 
+		return ResponseEntity.ok(produtoRepository.findAllByPrecoContainingIgnoreCase(preco));
+	}
 }
