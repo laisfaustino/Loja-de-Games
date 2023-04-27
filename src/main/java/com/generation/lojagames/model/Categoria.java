@@ -2,6 +2,7 @@ package com.generation.lojagames.model;
 
 import java.util.List;
 
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import jakarta.persistence.CascadeType;
