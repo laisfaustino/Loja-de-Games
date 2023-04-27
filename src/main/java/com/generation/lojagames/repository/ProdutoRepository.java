@@ -10,6 +10,7 @@ import com.generation.lojagames.model.Produto;
 
 public interface ProdutoRepository extends JpaRepository<Produto, Long> {
 
+<<<<<<< HEAD
 	public List<Produto> findAllByNomeContainingIgnoreCase(String nome);
 
 	/**
@@ -30,4 +31,8 @@ public interface ProdutoRepository extends JpaRepository<Produto, Long> {
 	 
 	public List <Produto> findAllByPrecoLessThanOrderByPrecoDesc(BigDecimal preco);
 	
+=======
+	List<Produto> findAllByNomeContainingIgnoreCase(@Param("nome") String nome);
+	List<Produto> findAllByPrecoContainingIgnoreCase(@Param("preco") BigDecimal preco);
+>>>>>>> ed9fa9624c0f7e4bd25d2cd1608d571758296fdc
 }

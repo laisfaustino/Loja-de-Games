@@ -2,7 +2,10 @@ package com.generation.lojagames.controller;
 
 import java.math.BigDecimal;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> ed9fa9624c0f7e4bd25d2cd1608d571758296fdc
 import java.util.List;
 import java.util.Optional;
 
@@ -119,4 +122,9 @@ public class ProdutoController {
 		return ResponseEntity.ok(produtoRepository.findAllByPrecoLessThanOrderByPrecoDesc(preco));
 	}
 
+<<<<<<< HEAD
 }
+=======
+
+}
+>>>>>>> ed9fa9624c0f7e4bd25d2cd1608d571758296fdc

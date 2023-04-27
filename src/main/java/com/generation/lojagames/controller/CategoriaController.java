@@ -3,7 +3,10 @@ package com.generation.lojagames.controller;
 import java.util.List;
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> ed9fa9624c0f7e4bd25d2cd1608d571758296fdc
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
